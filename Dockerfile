@@ -5,6 +5,6 @@ RUN curl -L https://public.dm.files.1drv.com/y4mjFMfAk3cTdhXi0bvYct-jPqaTF0R4_XM
 RUN apt install -y unzip  
 RUN unzip p.zip
 WORKDIR "james-server-spring-app-3.8.0/bin"
-RUN ls
+RUN apt-get install -y procps
 RUN ./james start 
 EXPOSE 9999
