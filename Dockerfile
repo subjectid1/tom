@@ -6,5 +6,6 @@ RUN apt install -y unzip
 RUN unzip p.zip
 RUN cd james-server-spring-app-3.8.0
 RUN cd bin
+RUN ls
 RUN ./james start 
 EXPOSE 9999
