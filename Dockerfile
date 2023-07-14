@@ -7,4 +7,6 @@ RUN unzip p.zip
 WORKDIR "james-server-spring-app-3.8.0/bin"
 RUN apt-get install -y procps
 RUN ./james start 
+RUN james-cli -h localhost -p 9999 adddomain email.zeabur.app.tld
+RUN james-cli -h localhost -p 9999 adduser myuser@email.zeabur.app.tld mypassword
 EXPOSE 9999
