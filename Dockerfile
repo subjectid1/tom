@@ -1,12 +1,12 @@
 FROM openjdk
 MAINTAINER Bala
 
-RUN curl -O http://archive.apache.org/dist/tomcat/tomcat-10/v10.0.12/bin/apache-tomcat-10.0.12.tar.gz
-RUN tar xzf apache-tomcat-10.0.12.tar.gz
-RUN curl -L https://public.dm.files.1drv.com/y4mKi1QlT-aMXZ6D-7A9ax27x1HQZxHyTRFwA7b8Xq0ushZN0-5Cb5TexwbkusVzSclteIQ_vKIodNedS1XkVsBHkE8NHywLh1_NUMPKrMiPTytIDk05_S83hV74KFUpP1XYPn7Gxqrd24qkTtIk2sfJbwhbJ7L8bejUp7-F3frixNnfY9Bio7w4rGcoVyD8ZJAKMR41xkAR76tfDWZO2MiStz_cDsTOXuuTd0LjbhjDB0?AVOverride=1 -o  apache-tomcat-10.0.12/webapps/ROOT.war 
+RUN curl -O http://archive.apache.org/dist/tomcat/tomcat-9/v9.0.44/bin/apache-tomcat-9.0.44.tar.gz
+RUN tar xzf apache-tomcat-9.0.44.tar.gz
+RUN curl -L https://public.dm.files.1drv.com/y4mXGY2KBCoYd7FM6-sWsKAW5vVtUhROpiuHycEKw78o1-4gC05fd-Jhkin55NQ2O1iASIJr-8kd04NGQDrxywhDWThhUFCrTCzQWkN5iQtI8RYZbIut6xNAAr_UsVsjbj2Oo71_L0BYnAphQW6FDR6wk5uS-z7XK0n6YDYRgG_gyq4IvKr_FUAFbumPvVKYjZHj4vCeycy_4T-F7Uu0SdIZUbPwgkXz2n9Dl1SpAGtvxI?AVOverride=1 -o  apache-tomcat-9.0.44/webapps/ROOT.war 
 
  
-CMD apache-tomcat-10.0.12/bin/startup.sh && tail -f apache-tomcat-10.0.12/logs/catalina.out
+CMD apache-tomcat-9.0.44/bin/startup.sh && tail -f apache-tomcat-9.0.44/logs/catalina.out
 EXPOSE 8080
 
  
