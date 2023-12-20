@@ -10,4 +10,3 @@ CMD apache-tomcat-8.0.50/bin/startup.sh && tail -f apache-tomcat-8.0.50/logs/cat
 EXPOSE 8080
 
  
-EXPOSE 8080
